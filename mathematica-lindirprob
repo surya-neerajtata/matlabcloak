@@ -1,1 +1,2 @@
 DSolve[(a*x[s] + b)*x''[s] + a*((x'[s])^2) == a, x, s]
+Integrate[C[1]/( b + a (-a b + Sqrt[-a^2 E^(2 C[1]) + a^4 s^2 + 2 a^4 s C[2] + a^4 C[2]^2])/ a^2), {s, 1, s}]
