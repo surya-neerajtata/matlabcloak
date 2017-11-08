@@ -2,7 +2,14 @@ function out = SingRef(a,b,c1,c2)
 
    % Ray Trajectories
    
-   s = linspace(1,100);
+   s = linspace(1,2000);
    x = (-a*b+sqrt(-a^2*exp(2*c1)+a^4*s.^2+2*a^4*s.*c2+a^4*c2^2))/(a^2) ;
+   
+   a = a+400;
+   b = b+12;
+   
+   t = linspace(101,200);
+   y = c1/a*(-log(a^2*(1+c2)+sqrt(-a^2*exp(2*c1)+a^4*(1+c2)^2))+log(a^2*(1+c2)+sqrt(-a^2*exp(2*c1)+a^4*(s+c2).^2))) ;
+   
 
-   plot(x,s)
+plot(x,y)
